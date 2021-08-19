@@ -38,7 +38,7 @@ In order to intall Pytorch head over to the Pytorch site select your specs and f
 ## Viewing the Jyputer Notebook
 In order to better view and work on the jupyter Notebook I encourage you to use [nbviewer](https://nbviewer.jupyter.org/) . You can simply copy and paste the link to this website and you will be able to edit it without any problem. Alternatively you can clone the repository using 
 ```
-git clone https://github.com/fotisk07/Image-Classifier/
+git clone https://github.com/mubash915/Image-Classifier/
 ```
 then in the command Line type, after you have downloaded jupyter notebook type
 ```
@@ -100,8 +100,8 @@ Please read [CONTRIBUTING.md](https://github.com/fotisk07/Image-Classifier/blob/
 
 ## Authors
 
-* **Fotios Kapotos** - *Initial work* 
+* **Mubashir Jinad** - *Initial work* 
 * **Udacity** - *Final Project of the AI with Python Nanodegree*
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/fotisk07/Image-Classifier/blob/master/LICENSE) file for details
-![alt text](https://github.com/fotisk07/Image-Classifier/blob/master/Certificate-1.jpg)
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mubash915/Image-Classifier/blob/master/LICENSE) file for details
+
