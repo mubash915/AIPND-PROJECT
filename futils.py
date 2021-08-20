@@ -167,8 +167,8 @@ def nn_setup(structure='densenet121',dropout=0.5, hidden_layer1 = 120,lr = 0.001
                         equality = (labels2.data == ps.max(1)[1])
                         accuracy += equality.type_as(torch.FloatTensor()).mean)
                    
-                vlost = vlost / len(vloader)
-                accuracy = accuracy /len(vloader)
+               vlost = vlost / len(vloader)
+               accuracy = accuracy /len(vloader)
                    
                    
                    
