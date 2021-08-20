@@ -49,30 +49,4 @@ futils.save_checkpoint(path,structure,hidden_layer1,dropout,lr)
                 
                 
 print("All Set and Done. The Model is trained")                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                    
