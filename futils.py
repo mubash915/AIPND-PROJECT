@@ -125,7 +125,6 @@ def nn_setup(structure='densenet121',dropout=0.5, hidden_layer1 = 120,lr = 0.001
      
      This function trains the model over a certain number of epochs and displays the training,validation and accuracy ecery "print_every" step using cuda if specified. The training method is specified by the criterion and the optimizer which are NLLLoss and Adam respectively 
      
-     
      '''
      steps = 0
      running_loss = 0
@@ -140,15 +139,15 @@ def nn_setup(structure='densenet121',dropout=0.5, hidden_layer1 = 120,lr = 0.001
                                                                       
              optimizer.zero_grad()                                                         
                                                                       
-            # Forward and backward passes                                                          
-            outputs = model.forward(inputs)
-            loss = criterion(outputs, labels)
-            loss.backward()
-            optimizer.step()       
+             # Forward and backward passes                                                          
+             outputs = model.forward(inputs)
+             loss = criterion(outputs, labels)
+             loss.backward()
+             optimizer.step()       
 
-            running_loss += loss.item()
+             running_loss += loss.item()
                    
-            if steps % print_every == 0       
+             if steps % print_every == 0       
                 model.eval()
                 vlost = 0
                 accuracy=0
@@ -165,7 +164,7 @@ def nn_setup(structure='densenet121',dropout=0.5, hidden_layer1 = 120,lr = 0.001
                         vlost = criterion(outputs,labels2)
                         ps = torch.exp(outputs).data
                         equality = (labels2.data == ps.max(1)[1])
-                        accuracy += equality.type_as(torch.FloatTensor()).mean)
+                        accuracy += equality.type_as(torch.FloatTensor()).mean()
                    
                vlost = vlost / len(vloader)
                accuracy = accuracy /len(vloader)
@@ -175,7 +174,7 @@ def nn_setup(structure='densenet121',dropout=0.5, hidden_layer1 = 120,lr = 0.001
                print("Epoch: {}/{}... ".format(e+1, epochs),
                      "Loss: {:.4f}".format(running_loss/print_every),
                      "Validation Lost {:.4f}".format(vlost),
-                     "Accuracy: {:.4f}".format(accuracy))
+                      "Accuracy: {:.4f}".format(accuracy))
           
           
               running_loss = 0
